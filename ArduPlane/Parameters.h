@@ -52,6 +52,8 @@ public:
         k_param_g2,
         k_param_avoidance_adsb,
         k_param_landing,
+        // colugo FBWA params
+        k_param_COLUGO_pitch_lock_FBWA, //6
         k_param_NavEKF3,
         k_param_BoardConfig_CAN,
 
@@ -353,6 +355,8 @@ public:
         // 254,255: reserved
     };
 
+    AP_Int16 COLUGO_pitch_lock_FBWA;         // locks the pitch when in FBWA
+    
     AP_Int16 format_version;
     AP_Int8 software_type;
 
